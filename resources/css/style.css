@@ -7,11 +7,26 @@
   text-align: center;
   color: seashell;
 }
+h2 {
+  font-size: 33px;
+}
+h3 {
+  font-size: 26px;
+}
+h5 {
+  font-size: 18px;
+}
+
+/* Header */
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 69px;
+  border-bottom: 1px solid seashell;
 }
 nav span {
   margin: 10px;
@@ -23,7 +38,99 @@ nav span {
   height: 50px;
   padding-left: 10px;
 }
-.footer {
+
+/* Main Content */
+main {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+.mission {
+  background-image: url("../images/mission.jpg");
+  height: 700px;
+  width: 1200px;
+  position: relative;
+}
+.mission .title {
+  position: absolute;
+  top: 52.8%;
+  width: 1200px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 700px;
+  width: 1000px;
+}
+.featured .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 104px;
+  width: 100%;
+  margin-top: 20px;
+}
+.item {
+  margin-bottom: 10px;
+}
+.item img {
+  height: 200px;
+  width: 300px;
+  padding: 15px 15px 10px 15px;
+}
+.locations {
+  height: 700px;
+}
+.location-img {
+  background-image: url("../images/locations.jpg");
+  height: 500px;
+  width: 1200px;
+  position: relative;
+}
+.location-boxes {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 10%;
+  width: 1200px;
+}
+.location-boxes .title {
+  background-color: rgba(0, 0, 0, 0);
+}
+.box {
+  width: 300px;
+  background-color: black;
+  margin: 15px 20px 0 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.box p, h3 {
+  background-color: black;
+  padding: 20px 0;
+}
+.info {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer {
+  position: relative;
+  top: 70px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.copyright {
   text-align: left;
   padding-left: 10px;
   font-weight: bold;
